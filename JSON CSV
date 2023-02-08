@@ -1,0 +1,14 @@
+import csv
+filename = "list.csv" 
+with open(filename,'r') as data:
+   for line in csv.reader(data):
+            print(line)
+# 2. kods
+
+file = open("list.csv", "w")
+file.write("name, surname, email\n")
+
+for i in range(1, 11):
+    file.write(f"Name{i}, Surname{i}, Email{i}\n")
+
+file.close()
